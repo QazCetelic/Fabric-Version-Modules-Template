@@ -1,0 +1,13 @@
+plugins {
+    id 'maven-publish'
+}
+
+group 'org.example'
+version '1.0.0'
+
+subprojects {
+    if (project.name != 'common') {
+        version = project.mod_version
+        group = project.maven_group
+    }
+}

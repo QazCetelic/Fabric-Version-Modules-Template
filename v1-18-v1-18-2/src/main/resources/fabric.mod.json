@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "example_mod",
+  "version": "${version}",
+  "name": "ExampleMod",
+  "description": "Example Mod",
+  "authors": [
+    "QazCetelic"
+  ],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "path/to/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "example_mod.client.ExampleModClient"
+    ],
+    "main": [
+      "example_mod.ExampleMod"
+    ]
+  },
+  "mixins": [
+    "example_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.4",
+    "fabric": "*",
+    "minecraft": ">=1.18 <=1.18.2"
+  }
+}

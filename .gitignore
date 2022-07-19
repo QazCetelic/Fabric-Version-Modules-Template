@@ -1,0 +1,4 @@
+src/**/run
+# Project exclude paths
+/.gradle/
+/v1-18-v1-18-2/.gradle/
